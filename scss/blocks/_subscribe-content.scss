@@ -1,0 +1,207 @@
+.subscribe-content {
+  display: flex;
+  &--picture {
+    margin-bottom: 14px;
+    @media (max-width:$vp-1132) {
+      flex-direction: column;
+      max-height: 760px;
+
+      gap: 50px;
+    }
+    @media (max-width: $vp-567) {
+      margin: 0;
+    }
+  }
+  &__inner {
+    position: relative;
+
+    flex-shrink: 0;
+    max-width: 419px;
+    @media (max-width:$vp-1132) {
+      max-width: 100%;
+    }
+  }
+  &__images {
+    &--position-plus {
+      position: relative;
+
+      flex-shrink: 0;
+      width: 742px;
+      height: 719px;
+      margin-top: -168px;
+      margin-left: -42px;
+
+      transform: scale(0.8);
+      @media (max-width:$vp-1365) {
+        width: 644px;
+        height: 644px;
+      }
+      @media (max-width:$vp-1132) {
+        display: none;
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: 86px;
+        left: -75px;
+
+        width: 269px;
+        height: 265px;
+
+        background-image: url("../image/decor/main/subscribe-plus/plus-img.svg");
+        background-repeat: no-repeat;
+        transform: translate(50%, 50%) scale(1.25);
+        @media (max-width:$vp-1365) {
+          transform: translate(50%, 50%) scale(1.15);
+        }
+        @media (max-width: $vp-768) {
+          transform: translate(50%, 50%);
+        }
+      }
+      &::after {
+        content: "";
+        position: absolute;
+        top: -43px;
+        left: -13px;
+        z-index: -1;
+
+        width: 400px;
+        height: 400px;
+
+        background-color: $color-blue-violet;
+        border-radius: 50%;
+        transform: translate(50%, 50%);
+        opacity: 0.3;
+        filter: blur(40px);
+      }
+    }
+    &--position-subscribe {
+      position: relative;
+      top: -65px;
+      left: -58px;
+
+      display: block;
+      flex-shrink: 0;
+      @media (max-width: $vp-1365) {
+        transform: scale(1);
+      }
+      @media (max-width: $vp-1132) {
+        top: 0;
+        left: 0;
+
+        width: 400px;
+        height: 100%;
+      }
+      @media (max-width: $vp-567) {
+        top: 38px;
+
+        width: 301px;
+        height: 371px;
+        margin: -1px;
+
+        transform: scale(1.2);
+      }
+      &::before {
+        content: "";
+        position: absolute;
+        top: -116px;
+        right: 224px;
+        z-index: -1;
+
+        width: 412px;
+        height: 369px;
+
+        background-color: $color-blue-violet;
+        border-radius: 50%;
+        transform: translate(50%, 50%);
+        opacity: 19%;
+        filter: blur(46px);
+        @media (max-width: $vp-768) {
+          left: -77px;
+
+          width: 294px;
+          height: 294px;
+
+          transform: translate(50%, 50%);
+        }
+        @media (max-width: $vp-567) {
+          top: 50%;
+          left: 50%;
+
+          width: 267px;
+          height: 271px;
+
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+  &__image-scooter-plus {
+    display: block;
+    width: 100%;
+    min-height: 100%;
+  }
+  &__image-scooter-subscribe {
+    display: block;
+    width: 100%;
+  }
+
+  &__title {
+    margin: 0 0 35px 0;
+
+    font-weight: 900;
+    font-size: 48px;
+    line-height: 48px;
+    text-align: left;
+    letter-spacing: -0.02em;
+    @media (max-width: $vp-768) {
+      font-size: 46px;
+      line-height: 46px;
+    }
+    @media (max-width: $vp-567) {
+      max-width: 291px;
+      margin: 0 0 22px 0;
+
+      font-size: 32px;
+      line-height: 32px;
+    }
+  }
+
+  &__description {
+    margin: 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    @media (max-width: $vp-768) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    @media (max-width: $vp-567) {
+      font-size: 16px;
+      line-height: 19px;
+    }
+
+    &--position {
+      margin-bottom: 41px;
+      @media (max-width: $vp-567) {
+        margin-bottom: 29px;
+      }
+    }
+  }
+  &--reverse {
+    flex-direction: row-reverse;
+    @media (max-width: $vp-1132) {
+      flex-direction: column-reverse;
+      align-items: center;
+    }
+  }
+  &__button {
+    max-width: 281px;
+    @media (max-width: $vp-768) {
+      width: 100%;
+      max-width: 100%;
+    }
+  }
+}

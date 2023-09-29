@@ -1,0 +1,16 @@
+.subscribe-plus {
+  &__wrapper {
+    padding-right: 211px;
+    padding-left: 186px;
+    @media (max-width: $vp-1365) {
+      padding-right: 88px;
+      padding-left: 88px;
+    }
+    @media (max-width: $vp-1132) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 0;
+    }
+  }
+}

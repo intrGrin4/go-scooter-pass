@@ -1,0 +1,23 @@
+@font-face {
+    font-family: 'Yandex Sans Text';
+    font-weight: 500;
+    font-style: normal;
+    src: url('../css/fonts/text-medium.woff') format('woff');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Yandex Sans Text';
+    font-weight: bold;
+    font-style: normal;
+    src: url('../css/fonts/text-black.woff') format('woff');
+    font-display: swap;
+  }
+
+  @font-face {
+    font-family: 'Yandex Sans Text';
+    font-weight: normal;
+    font-style: normal;
+    src: url('../css/fonts/text-regular.woff') format('woff');
+    font-display: swap;
+  }

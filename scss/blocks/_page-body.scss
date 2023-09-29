@@ -1,0 +1,22 @@
+.page-body {
+  position: relative;
+  z-index: -1;
+
+  display: flex;
+  flex-direction: column;
+  min-width: 375px;
+  margin: 0;
+
+  font-family: $ff-ys-text;
+  color: $color-bokara-grey;
+
+  background-color: $color-white;
+  &__background {
+    position: relative;
+    z-index: -1;
+
+    background: linear-gradient(180deg,#ffffff00 0,#ffffff 100%),
+    linear-gradient(0deg,#ffffff33 0,#ffffff33 100%),
+    linear-gradient(90deg,#ff5c4d33 0,#eb469f33 25%,#8341ef33 72%,#3f68f933 100%);
+  }
+}

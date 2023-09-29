@@ -1,0 +1,15 @@
+.container {
+  padding-right: 74px;
+  padding-left: 74px;
+  @media (max-width: $vp-1365) {
+    padding-right: 54px;
+    padding-left: 54px;
+  }
+  @media (max-width: $vp-567) {
+    padding-right: 32px;
+    padding-left: 32px;
+    &--reset {
+      padding: 0;
+    }
+  }
+}

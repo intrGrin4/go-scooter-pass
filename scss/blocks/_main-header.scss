@@ -1,0 +1,266 @@
+.main-header {
+  &__wrapper {
+    padding-left: 188px;
+    @media (max-width: $vp-1365) {
+      padding-left: 88px;
+    }
+    @media (max-width: $vp-1132) {
+      padding-left: 0;
+    }
+  }
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+    padding-top: 125px;
+    @media (max-width: $vp-1365) {
+      padding-top: 50px;
+    }
+    @media (max-width: $vp-567) {
+      padding-top: 32px;
+    }
+  }
+  &__logo {
+    width: 176px;
+    @media (max-width: $vp-768) {
+      width: 150px;
+    }
+    @media (max-width: $vp-567) {
+      width: 112px;
+    }
+    &:hover {
+      opacity: 0.7;
+    }
+    &:focus-visible {
+      border-radius: 5px;
+      outline: 4px solid $color-bokara-grey;
+      outline-offset: 4px;
+    }
+    &:active {
+      outline: none;
+      opacity: 0.5;
+    }
+  }
+
+  &__content {
+    position: relative;
+
+    display: flex;
+    padding-top: 58px;
+    @media (max-width: $vp-1132) {
+      flex-direction: column;
+      align-items: center;
+    }
+    @media (max-width: $vp-567) {
+      padding-top: 22px;
+    }
+  }
+
+  &__text-content {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+    max-width: 445px;
+    @media (max-width: $vp-1132) {
+      max-width: 100%;
+    }
+  }
+
+  &__title {
+    margin: 0 0 30px 0;
+
+    font-weight: bold;
+    font-size: 72px;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    @media (max-width: $vp-768) {
+      font-size: 46px;
+      line-height: 46px;
+    }
+    @media (max-width: $vp-567) {
+      margin: 0 0 25px 0;
+
+      font-size: 36px;
+      line-height: 36px;
+    }
+  }
+
+  &__description {
+    max-width: 435px;
+    margin: 0 0 35px 0;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 31px;
+    @media (max-width: $vp-1132) {
+      max-width: 100%;
+    }
+    @media (max-width: $vp-768) {
+      font-size: 18px;
+      line-height: 23px;
+    }
+    @media (max-width: $vp-567) {
+      margin: 0 0 45px 0;
+    }
+  }
+
+  &__price {
+    padding: 2px 12px;
+
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 29px;
+    text-align: left;
+    color: $color-bokara-grey;
+    @media (max-width: $vp-567) {
+      padding: 0 7px;
+
+      font-size: 18px;
+      line-height: 21px;
+    }
+
+    &--color {
+      background: radial-gradient(100% 100% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
+      border-radius: 500px;
+    }
+  }
+
+  &__price-line {
+    position: relative;
+
+    display: inline-flex;
+    align-items: center;
+    min-width: 149px;
+    padding: 0 12px 0 0;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+
+    border-radius: 500px;
+
+    gap: 12px;
+    @media (max-width: $vp-567) {
+      min-width: 0;
+      padding: 0 5px 0 0;
+
+      font-size: 13px;
+      line-height: 16px;
+
+      gap: 5px;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      right: 11px;
+
+      width: 31%;
+      height: 1px;
+
+      background-color: $color-grey;
+    }
+
+    &--color {
+      color: $color-grey;
+
+      background: linear-gradient(0deg, rgba(255, 255, 255, 0.63), rgba(255, 255, 255, 0.63)),
+      radial-gradient(100% 100% at 100% 0%, #e0b8ff 0%, #b6b9ff 100%);
+    }
+  }
+
+  &__images-content {
+    position: absolute;
+    top: 0;
+    z-index: -1;
+
+    min-width: 744px;
+
+    transform: translate(43%, -16%) scale(1.1);
+
+    @media (max-width: $vp-1365) {
+      width: 620px;
+      min-width: 620px;
+
+      transform: translate(56%, -16%) scale(1.1);
+    }
+    @media (max-width: $vp-1132) {
+      position: relative;
+
+      width: 507px;
+      min-width: 507px;
+      margin-top: 80px;
+
+      transform: none;
+    }
+
+    @media (max-width: $vp-768) {
+      width: 420px;
+      min-width: 420px;
+      height: 355px;
+    }
+    @media (max-width: $vp-567) {
+      left: -6px;
+
+      width: 353px;
+      min-width: 353px;
+      height: 344px;
+      margin-top: -47px;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+
+      width: 207px;
+      height: 207px;
+
+      background-image: url("../image/content/header/svg/scooter-community.svg");
+      background-repeat: no-repeat;
+      transform: translate(94%, 148%) scale(0.9);
+      @media (max-width: $vp-1365) {
+        transform: translate(70%, 115%) scale(0.7);
+      }
+      @media (max-width: $vp-1132) {
+        transform: translate(50%, 85%) scale(0.7);
+      }
+      @media (max-width: $vp-768) {
+        transform: translate(31%, 61%) scale(0.6);
+      }
+      @media (max-width: $vp-567) {
+        transform: translate(19%, 43%) scale(0.4);
+      }
+    }
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: -1;
+
+      width: 657px;
+      height: 401px;
+
+      background-color: $color-blue-violet;
+      border-radius: 50%;
+      transform: translate(-7%, 16%) rotate(45deg);
+      opacity: 29%;
+      filter: blur(60px);
+      @media (max-width: $vp-1365) {
+        width: 534px;
+        height: 361px;
+      }
+      @media (max-width: $vp-1132) {
+        width: 324px;
+        height: 235px;
+
+        transform: translate(25%, 31%) rotate(45deg);
+        opacity: 33%;
+        filter: blur(18px);
+      }
+      @media (max-width: $vp-567) {
+        display: none;
+      }
+    }
+  }
+}

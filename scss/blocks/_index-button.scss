@@ -1,0 +1,65 @@
+.index-button {
+  display: block;
+  max-width: 318px;
+  padding: 22px 48px 21px 48px;
+
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 22px;
+  text-align: center;
+  color: $color-bokara-grey;
+  text-decoration: none;
+
+  border: none;
+  border-radius: 36px;
+  cursor: pointer;
+  &:hover {
+    box-shadow: none;
+  }
+  &:focus-visible {
+    outline: 4px solid;
+    outline-offset: -1px;
+    box-shadow: none;
+  }
+  &:active {
+    opacity: 0.7;
+  }
+  @media (max-width: $vp-768) {
+    width: 100%;
+    max-width: 100%;
+
+    font-size: 18px;
+    line-height: 22px;
+  }
+  @media (max-width: $vp-567) {
+    width: 100%;
+    padding: 14px 48px 13px 48px;
+  }
+  &--fixed {
+    @media (max-width: $vp-567) {
+      position: fixed;
+      bottom: 24px;
+      left: 50%;
+
+      width: calc(100% - 64px);
+
+      transform: translateX(-50%);
+
+      animation: transformAnimate 1s ease-out;
+    }
+  }
+
+  &--color {
+    background-color: $color-gorse;
+    box-shadow: 0 4px 98px 0 rgba(255, 222, 64, 0.59);
+  }
+}
+
+@keyframes transformAnimate {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
